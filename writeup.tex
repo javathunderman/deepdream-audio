@@ -42,6 +42,19 @@ Normally, backpropagation applies these to the weight and bias vectors with the 
 corrections to the input vector and aim to increase the loss, thereby enhancing any latent patterns in the image. This is what DeepDream does, and the result are these dreamy, surreal images.
 We can apply the principles here to any vectorized input, including audio.
 
+\begin{figure}[!htb]
+    \includegraphics[width=\linewidth]{gemstone.jpg}
+    \caption{A photo of my Gemstone research team}
+    \label{fig:gemstone}
+\end{figure}
+\FloatBarrier
+
+\begin{figure}[!htb]
+    \includegraphics[width=\linewidth]{deepdreamgemstone.png}
+    \caption{A photo of my Gemstone research team after being run through DeepDream}
+    \label{fig:gemstonedeepdream}
+\end{figure}
+\FloatBarrier
 \section{Applying DeepDream to audio}
 DeepDream uses the weights from the ImageNet model, which expects a $412 \times 500 \times 3$ matrix, where the $412 \times 500$ represents the length and width
 of the image, and the 3 represents the three channel nature of the image (for the amount of red, green, and blue).
